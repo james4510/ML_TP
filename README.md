@@ -6,8 +6,13 @@ A book recommendation system conducted in a machine learning class at Gachon Uni
 - Data Preprocessing
 - Modeling
 - Evaluation / Analysis
+- 
 ### Business Objective
-
+- Enhancing User Experience
+    : analyze each user’s reading preferences
+- Providing Accurate and Efficient Recommendations 
+    : By employing SVD, user-based, and item-based collaborative filtering models
+  -->  Personalized reading experience
 
 ### Data Exploration
 Goodbooks-10k Dataset:
@@ -46,14 +51,29 @@ Normalization
 - Exclude duplicated books of both dataset
 
 ### Modeling
+- Implemented using Surprise library
 
+SVD
+- SVD is a dimensionality reduction technique that analyzes latent factors between users and items to generate recommendations
+- Recommendations are generated based on the provided user ID  
+- Output: displays the title of each recommended book and its predicted rating  
+
+User-based
+- User-Based Collaborative Filtering finds similar users based on Pearson correlation
+- Recommends books that similar users have rated highly
+- Output: provides a list of books with predicted ratings for the specified user
+  
+Item-based
+- Item-Based Collaborative Filtering compares items to find similarities based on user ratings
+- Books similar to those the user has already rated highly are recommended
+- Output: generates a list of books with predicted ratings tailored to the specified user
 
 ### Evaluation / Analysis
 
 
 ### Team Member
-- Kwon Soyeong
-- Song Eunjung
-- Jeon Sihyeon
-- Jang Yonggeun
-- Kim Jeongsu
+- Kwon Soyeong : data modeling
+- Song Eunjung : data modeling
+- Jeon Sihyeon : data evaluation
+- Jang Yonggeun : data preprocessing
+- Kim Jeongsu : data preprocessing
